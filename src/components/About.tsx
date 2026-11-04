@@ -46,8 +46,9 @@ export function About() {
     >
       <div className="container-page grid items-center gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
         <m.div {...animation} variants={reveal.slideRight}>
-          <h2 id="nosotros-titulo" className="heading-2">
-            {t.about.title}
+          <h2 id="nosotros-titulo" className="heading-2 flex items-center gap-3">
+            <img src="/images/a2-logo.png" alt="A2" className="h-14 w-auto shrink-0 object-contain" />
+            <span>Technologies</span>
           </h2>
           <p className="lead mt-5">{t.about.text}</p>
           <a href="#contacto" className={`${buttonStyles.secondary} mt-8`}>

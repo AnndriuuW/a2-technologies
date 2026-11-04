@@ -19,7 +19,7 @@ export const site = {
   name: 'A2 Technologies',
   url: clean(import.meta.env.VITE_SITE_URL).replace(/\/+$/, ''),
   location: 'Lima, Perú',
-  whatsappPlaceholder: '+51 XX XXX XXX',
+  whatsappPlaceholder: '+51 991 510 915',
   email: clean(import.meta.env.VITE_CONTACT_EMAIL) || 'contacto@a2technologies.com',
   formspreeEndpoint: url(import.meta.env.VITE_FORMSPREE_ENDPOINT),
   social: {

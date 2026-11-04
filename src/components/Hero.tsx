@@ -2,7 +2,6 @@ import { m } from 'framer-motion';
 import { reveal, stagger } from '../hooks/useScrollAnimation';
 import { useLanguage } from '../i18n/useLanguage';
 import { buttonStyles } from './ui/buttonStyles';
-import { LogoMark } from './ui/Logo';
 import { HeroVisual } from './mockups/HeroVisual';
 
 export function Hero() {
@@ -20,13 +19,6 @@ export function Hero() {
       />
       <div className="container-page grid items-center gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.12fr)] lg:gap-10">
         <m.div initial="hidden" animate="visible" variants={stagger(0.16, 0.05)}>
-          <m.p
-            variants={reveal.fadeIn}
-            className="inline-flex items-center gap-2 rounded-full border border-line-strong bg-background-secondary/70 py-1.5 pr-4 pl-2.5 text-sm font-semibold text-ink"
-          >
-            <LogoMark className="size-5" />
-            A2 Technologies
-          </m.p>
           <m.h1 variants={reveal.slideUp} className="heading-1 mt-6">
             {t.hero.titleStart} <span className="text-accent">{t.hero.titleAccent}</span>
           </m.h1>
